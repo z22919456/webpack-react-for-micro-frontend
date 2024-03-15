@@ -14,10 +14,10 @@ module.exports = {
       manifest: "./public/manifest.json",
     }),
     new ModuleFederationPlugin({
-      name: "CRM_APP",
+      name: "crm",
       filename: "remoteEntry.js",
       exposes: {
-        "./CrmApp": "./src/index.js",
+        "./crm-app": "./src/index.js",
       },
       shared: ["react", "react-dom"],
     }),
